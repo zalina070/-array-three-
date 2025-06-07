@@ -32,3 +32,25 @@ arr1.sort((a, b) => a - b);
 
 console.log(arr1.join(',')); // "-4,-3,1,2,3,5,6,7,8"
 
+# 3
+var arr1 = [3, 'a', 2, 4, 9, 3];
+
+function mostFrequent(arr) {
+  const frequency = {};
+  let maxCount = 0;
+  let maxItem = null;
+
+  for (const item of arr) {
+    frequency[item] = (frequency[item] || 0) + 1;
+    if (frequency[item] > maxCount) {
+      maxCount = frequency[item];
+      maxItem = item;
+    }
+  }
+
+  return maxItem;
+}
+
+console.log(mostFrequent(arr1)); // 3
+
+
