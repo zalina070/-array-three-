@@ -23,5 +23,12 @@ function joinEvenPairs(str) {
   return result;
 }
 
-// Пример:
-console.log(joinEvenPairs("025468")); // "0-254-6-8"
+console.log(joinEvenPairs("025468")); 
+ # 2
+var arr1 = [-3, 8, 7, 6, 5, -4, 3, 2, 1];
+
+// По возрастанию с учётом чисел (используем compare function)
+arr1.sort((a, b) => a - b);
+
+console.log(arr1.join(',')); // "-4,-3,1,2,3,5,6,7,8"
+
